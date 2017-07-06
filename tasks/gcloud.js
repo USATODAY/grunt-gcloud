@@ -28,7 +28,7 @@ module.exports = function(grunt) {
 
     this.files.forEach(function(filePair) {
       filePair.src.forEach(function(src) {
-        var srcFile = filePair.cwd + '/' + src,
+        var srcFile = src,
           destFile = filePair.dest + '/' + src;
 
         if (!grunt.file.isDir(srcFile)) {
