@@ -28,7 +28,6 @@ module.exports = function(grunt) {
 
     this.files.forEach(function(filePair) {
       filePair.src.forEach(function(src) {
-        grunt.log.writeln(src);
         var srcFile = src,
           destFile = filePair.dest;
 
